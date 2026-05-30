@@ -78,5 +78,3 @@ myparrot.eat()
 myparrot.fly()
 myparrot.chirp()
 myparrot.talk()
-
-
