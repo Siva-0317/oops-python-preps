@@ -38,6 +38,14 @@ class immutablebankacct:
     @property
     def balance(self):
         return self._balance
+    #setter methods
+    @balance.setter
+    def balance(self,value):
+        if value>=0:
+            self._balance=value
+        else:
+            print("Balance cannot be negative.")
+    
 
 #Defensive copying demo: creating a copy of an object to prevent 
 # unintended modifications to the original object.
@@ -83,3 +91,4 @@ acct= bankaccount("Alice",1000.0)
 acct.deposit(500.0)
 acct.withdraw(200.0)
 print(acct._balance) # Output: 1300.0
+

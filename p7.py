@@ -78,3 +78,13 @@ myparrot.eat()
 myparrot.fly()
 myparrot.chirp()
 myparrot.talk()
+
+#explanation of hybrid inheritance for the above code:
+#1. The animal class is the base class that provides the eat() method.
+#2. The flyable class is another base class that provides the fly() method.
+#3. The bird class inherits from both animal and flyable classes, making it a hybrid class. It has access to both the eat() and fly() 
+# methods, as well as its own chirp() method.
+#4. The parrot class inherits from the bird class, making it a multilevel inheritance. It has access to all the methods of the bird
+# class, as well as its own talk() method.
+# thus, the parrot class is a hybrid class that combines multiple inheritance (from bird) and multilevel inheritance 
+# (from animal and flyable).

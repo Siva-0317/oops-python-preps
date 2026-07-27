@@ -19,7 +19,7 @@ class Vehicle:
     def __init__(self,make,model):
         self.make=make
         self.model=model
-class Car(Vehicle):
+class Car(Vehicle): #single inheritance
     def __init__(self,make,model,num_doors):
         super().__init__(make,model)#calls parent constructor vehicle
         self.num_doors=num_doors

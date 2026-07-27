@@ -7,10 +7,14 @@ class Animal:
 class Dog(Animal):
     def eat(self):
         print("Dog eats")
+    #overriding child method to access parent method:
+    def super_eat(self):
+        super().eat() #calls parent method
 a= Animal()
 d=Dog()
 a.eat() #calls parent method
 d.eat() #calls child method, overrides parent method
+d.super_eat() #calls parent method using super()
 
 #method overloading (compile-time polymorphism) using default arguments:
 class Animal:

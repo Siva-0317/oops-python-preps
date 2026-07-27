@@ -3,7 +3,7 @@
 # of a method that is already defined in its parent class. 
 # The method in the child class has the same name, return type, and 
 # parameters as the method in the parent class. This allows the child 
-# class to modify or extend the behavior of the parent class method.
+# class to modify or extend the behavior of the parent class method. -- runtime polymorphism
 class Animal:
     def eat(self):
         print("animal eats")
@@ -15,7 +15,7 @@ mydog=Dog()
 myanima.eat() #parent method
 mydog.eat() #child method, overrides parent method
 
-#method overloading: when a class has multiple methods with the same name 
+#method overloading: when a class has multiple methods with the same name  -- Compile time polymorphism
 # but different parameters. This allows the class to perform different tasks 
 # based on the number or type of arguments passed to the method. Python 
 # does not support method overloading in the traditional sense, but we can 
